@@ -37,12 +37,12 @@ module.exports = function(wallaby) {
       '.storybook/**/*.js',
       'src/**/*.+(js|jsx|json|snap|css|less|sass|scss|jpg|jpeg|gif|png|svg)',
       // But don't include the tests that will be triggering
-      '!src/**/*.spec.js'
+      '!src/**/*.test.js'
     ],
     tests: [
-      // '!src/spec/storyshots.spec.js', // Can be useful to disable the storyshots tests as they are long running
+      // '!src/spec/storyshots.test.js', // Can be useful to disable the storyshots tests as they are long running
       '!src/spec/screenshots/**/*.*', // Don't try and run screenshots with wallaby
-      'src/**/*.spec.js'
+      'src/**/*.test.js'
     ],
     filesWithNoCoverageCalculated: [
       'node_modules/**/*.*',
